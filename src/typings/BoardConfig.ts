@@ -98,4 +98,4 @@ export interface BoardConfig {
   };
 }
 
-export default BoardConfig;
+export { type BoardConfig as default };
