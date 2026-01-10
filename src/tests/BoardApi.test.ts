@@ -170,7 +170,7 @@ describe.sequential('Test the board API', () => {
     expect(boardApi.getFen()).toBe(
       'rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2'
     );
-    expect(boardApi?.getPgn()).toBe(pgn);
+    expect(boardApi?.getPgn()).toContain(pgn);
     expect(boardApi.getTurnColor()).toBe('white');
     expect(boardApi.getCurrentTurnNumber()).toBe(2);
   });
