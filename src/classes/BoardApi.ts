@@ -32,9 +32,9 @@ import {
   type Color as ShortColor,
   type Square,
 } from 'chess.js';
-import type { Api } from 'chessground/api';
-import { Chessground } from 'chessground/chessground';
-import type { Color, Key, MoveMetadata, Role } from 'chessground/types';
+import type { Api } from '@lichess-org/chessground/api';
+import { Chessground } from '@lichess-org/chessground/chessground';
+import type { Color, Key, MoveMetadata, Role } from '@lichess-org/chessground/types';
 import { nextTick } from 'vue';
 
 /**

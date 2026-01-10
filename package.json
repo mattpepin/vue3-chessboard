@@ -50,8 +50,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore --ignore-path .eslintignore"
   },
   "dependencies": {
-    "chess.js": "^1.2.0",
-    "chessground": "^9.1.1"
+    "@lichess-org/chessground": "^9.9.0",
+    "chess.js": "^1.2.0"
   },
   "peerDependencies": {
     "vue": "^3.2.47"
