@@ -607,7 +607,7 @@ export class BoardApi {
    * }
    */
   getPgnInfo(): {
-    [key: string]: string | undefined;
+    [key: string]: string | null;
   } {
     return this.game.header();
   }
@@ -618,7 +618,7 @@ export class BoardApi {
    * @param changes a record of key value pairs to change in the PGN, eg. `{ White: 'Deep Blue', Black: 'Kasparov, Garry' }`
    */
   setPgnInfo(changes: { [key: string]: string }): {
-    [key: string]: string | undefined;
+    [key: string]: string | null;
   } {
     return this.game.header(...Object.entries(changes).flat());
   }
