@@ -43,6 +43,7 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --project tsconfig.app.json && ./format.sh",
     "preview": "vite preview",
+    "prepare": "npm run build",
     "test": "vitest --environment jsdom --root src/",
     "build-only": "vite build",
     "format": "prettier --write src/",
